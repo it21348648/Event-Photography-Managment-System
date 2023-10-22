@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ARTSY SHOTS | ABOUT US</title>
+        <link rel="stylesheet" href="../css/Ravindu.css"/>
+        <link rel="stylesheet" href="../css/Header.css"/>
+        <link rel="stylesheet" href="../css/Footer.css"/>
+        <script src="../js/Header.js"></script>
+    </head>
+
+    <body>
+
+        <!--Header-->
+        <header>
+            <div class="nav-bar">
+                <div class="logo"><img src="../images/logo.png" alt=""></div>
+                <div class="navigation">
+                    <div class="nav-items">
+                        <a href="../html/Home.html">Home</a>
+                        <a href="../html/Services.html">Services</a>
+                        <a href="../html/Reviews.html">Reviews</a>
+                        <a href="../html/Contact Us.html">Contact Us</a>
+                        <a href="../html/Gallery.html">Gallery</a>
+                        <a href="../html/Reservation.html">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--End header-->
+
+        <div class="hero"><div class="row1">
+            <div class="col-1">
+                <h1>About us</h1>
+                <p>
+                    Lassana Events was established with the aim of making any dream occasion possible; a reality that exceeds expectations.<br><br>
+                A subsidiary of Lassana Flora founded by Dr. Lasantha Malavige (MBBS, DIPM, PhD) in 1998, today Lassana Events caters to a spectrum of occasions, servicing clients through our branches based in Colombo 07, Nawala, Negambo, Panadura and Kandy and Jaffna.<br><br>
+                From intimate parties to large scale gatherings, inclusive of local and international conferences and weddings – no event large or small is beyond the scope of our dedicated team of Event Managers who ensure that every little detail is taken care of, as our focus has always been ensuring the highest of quality, safety and reliability.<br><br>
+                From the moment the initial briefings are carried out, you can simply sit back relax and count on our experienced and dedicated team of Event Planners to create a stress free and tailor made event. Our team will take you through each aspect leading to the event, from deciding on venues and themes to other useful information to provide you with a comprehensive and customized result that only the best in the island can provide.<br><br>
+                Speak to our experienced, committed and enthusiastic team today regarding your upcoming event!
+                </p>
+    
+                <ul class="hero-btn">
+                    <li class="btn active"></li>
+                    <li class="btn"></li>
+                    <li class="btn"></li>
+                </ul>
+            </div>
+    
+            <div class="col-2">
+                <img src="../images/img20.jpg" id="banner">
+            </div>
+        </div>   
+        </div>
+    
+        <script>
+            var btn= document.getElementsByClassName("btn");
+            var banner = document.getElementById("banner");
+    
+            btn[0].onclick =function(){
+                banner.src = "../images/img20.jpg";
+                animation();
+                this.classList.add("active");
+            }
+    
+            btn[1].onclick =function(){
+                banner.src = "../images/img11.jpg";
+                animation();
+                this.classList.add("active");
+    
+            }
+    
+            btn[2].onclick =function(){
+                banner.src = "../images/img14.jpg";
+                animation();
+                this.classList.add("active");
+            }
+    
+            function animation(){
+                banner.classList.add("zoom");
+                setTimeout(function() {
+                    banner.classList.remove("zoom");
+                }, 500);
+    
+                for(b of btn){
+                    b.classList.remove("active");
+                }
+            }
+        </script>
+
+        <br><br>
+
+        <h1 class="center">What can we do for you</h1>
+
+        <br>
+        
+        <table>
+            <tr>
+                <td><img src="../images/What_Can_We_Do.jpg" class="img2"></td>
+                <td>Event Rentals
+
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <p class="tab1"></p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </p><br>
+
+                service staff
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <p class="tab1"></p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                </p><br>
+
+                Ceremony Venues
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <p class="tab1"></p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+               
+                </p>
+                </td>
+            </tr>
+            </table>
+
+        <div class="accordion">
+            <div class="contentbx">
+                <div class="lable">Team 01</div>
+                <div class="content">
+                    <li>
+                        <ol>Sandaru Kavisha</ol>
+                        <ol>Kawan Lasal</ol>
+                        <ol>Uchiru Shamilka</ol>
+                        <ol>Buddima Prabashwara</ol>
+                    </li>
+                </div>
+            </div>
+
+            <div class="contentbx">
+                <div class="lable">Team 02</div>
+                <div class="content">
+                    <li>
+                        <ol>Dilash Sajika</ol>
+                        <ol>Anuradha Godakanda</ol>
+                        <ol>Madusha Thumbowita</ol>
+                        <ol>Pasindu Dilshan</ol>
+                    </li>
+                </div>
+            </div>
+
+            <div class="contentbx">
+                <div class="lable">Team 03</div>
+                <div class="content">
+                    <li>
+                        <ol>Ayodhya Kharunanayaka</ol>
+                        <ol>Anupa Ranmal</ol>
+                        <ol>Ravindu Balasooriya</ol>
+                        <ol>Nipun Prarthana</ol>
+                    </li>
+                </div>
+            </div>
+
+            <div class="contentbx">
+                <div class="lable">Team 04</div>
+                <div class="content">
+                    <li>
+                        <ol>Gehan chamath</ol>
+                        <ol>Yasindu Dilanka</ol>
+                        <ol>Kavindu Mendis</ol>
+                        <ol>Sahan Gunawardhana</ol>
+                    </li>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            const accordion = document.getElementsByClassName('contentbx');
+
+            for (i=0; i<accordion.length; i++){
+                accordion[i].addEventListener('click', function(){
+                    this.classList.toggle('active')
+                })
+            }
+        </script>
+
+         <!--=======================Start footer section=======================-->
+         <section class="footer">
+            <div class="f-logo">
+                <img src="../images/flogo.png" alt="">
+            </div>
+            <ul class="list">
+                <li>
+                    <a href="../html/Home.html">Home</a>
+                </li>
+                <li>
+                    <a href="../html/Services.html">Services</a>
+                </li>
+                <li>
+                    <a href="">Contact Us</a>
+                </li>
+                <li>
+                    <a href="">Gallery</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+            </ul>-->
+            <p class="copyright">Copyright © 2022 Artsy Shots | All Rights Reserved.</p>
+        </section>
+        <!--=======================End footer section=======================-->
+    </body>
+</html>

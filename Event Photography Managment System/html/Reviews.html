@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ARTSY SHOTS | REVIEWS</title>
+        <link rel ="stylesheet" href ="../css/Ravindu.css"/>
+        <link rel="stylesheet" href="../css/Header.css"/>
+        <link rel="stylesheet" href="../css/Footer.css"/>
+        <script src="../js/Header.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    </head>
+
+    <body>
+
+    <!--Header-->
+    <header>
+        <div class="nav-bar">
+            <div class="logo"><img src="../images/logo.png" alt=""></div>
+            <div class="navigation">
+                <div class="nav-items">
+                    <a href="../html/Home.html">Home</a>
+                    <a href="../html/Services.html">Services</a>
+                    <a href="../html/Reviews.html">Reviews</a>
+                    <a href="../html/Contact Us.html">Contact Us</a>
+                    <a href="../html/Gallery.html">Gallery</a>
+                    <a href="../html/Reservation.html">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--End header-->    
+    
+      
+    <div class="container">
+        <div class="swiper">
+            <!--Additional required wrapper-->
+            <div class="swiper-wrapper">
+                <!--slides-->
+
+                <!--<div class="swiper-slide"><img src="Images/pexels-40.jpg"></div>-->
+                <div class="swiper-slide"><img src="../images/pexels-11.jpg"></div>
+                <div class="swiper-slide"><img src="../images/img5.jpg"></div>
+            </div>
+
+            <!--If need pagination-->
+            <div class="swiper-pagination"></div>
+
+            <!--If need navigation button-->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper=new swiper('.swiper',{
+        autoplay :{
+            delay: 3000,
+            disableOnInteraction: false,
+
+        },
+
+        loop: true,
+        
+        //If we need pagination
+        pagination:{
+            e1:'.swiper-pagination',
+            clickable: true,
+        },
+
+        //navigation arrows
+        navigation: {
+            nextE1: '.swiper-button-next',
+            prevE1: '.swiper-button-prev',
+        },
+        }
+        );
+    </script>
+
+    <!--Add feedback-->
+
+    <div>
+        <table class="wrap">
+            
+            <form action="../php/Ravindu.php" method="post">
+                <h1 class="feedback">feedback Form</h1>
+                <tr>
+                    <td>
+                        <label>Customer Invoice Number</label>
+                    <br>
+                    <input type="text" name="CID" class="txt">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <label>How do you rate your overall experience</label><br>
+                        <input type="radio" name="rate" value="bad">Bad
+                        <input type="radio" name="rate" value="average">Average
+                        <input type="radio" name="rate" value="good">Good
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Full name</label>
+                    <br>
+                    <input type="text" name="Fullname" class="txt">
+                    </td>
+                    <td>
+                        <label>Email Address</label>
+                    <br>
+                    <input type="email" name="email" class="txt">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Age</label>
+                    <br>
+                    <input type="text" name="Age" class="txt">
+                    </td>
+                    <td>
+                        <label>Phone number</label>
+                    <br>
+                    <input type="text" name="Phone" class="txt">
+                    </td>
+                </tr>
+                <!--<tr>
+                    <td colspan="2">
+                        <label>Message</label>
+                        <br>
+                        <textarea class="txtarea"></textarea>
+                    </td>
+                </tr>-->
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" class="btn1">Submit</button>
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </div>
+
+        <!--feedback-->
+        <section class="services">
+            <h1>Reviews</h1>
+            <div class="container">
+                <div class="box">
+                    <img src="../images/img90.jpeg">
+                    <div class="info">
+                        <h3>Nipun</h3>
+                        <p>Event Type= Wedding<br>
+                        Rate= Good<br>
+                        </p>
+                        
+                    </div>
+                </div>
+          
+                  <div class="box">
+                      <img src="../images/img91.jpeg">
+                      <div class="info">
+                          <h3>Limali</h3>
+                          <p>Event Type= Bide to be<br>
+                        Rate= Average</p>
+                          
+                      </div>
+                  </div>
+                  
+                      <div class="box">
+                          <img src="../images/img92.jpeg">
+                          <div class="info">
+                              <h3>Akashi</h3>
+                              <p>Event Type= 
+                                convocation<br>
+                            Rate= Good</p>
+                              
+                          </div>
+                      </div>
+        
+                      
+                          <div class="box">
+                              <img src="../images/img93.jpeg">
+                              <div class="info">
+                                  <h3>Devond</h3>
+                                  <p>Event Type= Birthday<br>
+                                Rate= Good</p>
+                                  
+                              </div>
+                          </div>
+        
+                          
+                              <div class="box">
+                                  <img src="../images/img94.jpeg">
+                                  <div class="info">
+                                      <h3>Kevin</h3>
+                                      <p>Event Type= Wedding<br>
+                                    Rate= Good</p>
+                                      
+                                  </div>
+                              </div>
+        
+                             
+                                  <div class="box">
+                                      <img src="../images/img95.jpeg">
+                                      <div class="info">
+                                          <h3>Hasraf</h3>
+                                          <p>Event Type= Birthday<br>
+                                        Rate= Average</p>
+                                          
+                                      </div>
+                                  </div>
+            </div>
+        </section>
+
+ <!--=======================Start footer section=======================-->
+ <section class="footer">
+    <div class="f-logo">
+        <img src="../images/flogo.png" alt="">
+    </div>
+    <!--<ul class="f-list">
+        <li>
+            <a href="../html/Home.html">Home</a>
+        </li>
+        <li>
+            <a href="../html/Services.html">Services</a>
+        </li>
+        <li>
+            <a href="">Contact Us</a>
+        </li>
+        <li>
+            <a href="">Gallery</a>
+        </li>
+        <li>
+            <a href="">About</a>
+        </li>
+    </ul>-->
+    <p class="copyright">Copyright © 2022 Artsy Shots | All Rights Reserved.</p>
+</section>
+<!--=======================End footer section=======================-->
+
+    </body>
+</html>

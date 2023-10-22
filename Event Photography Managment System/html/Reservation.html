@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Book Now | Artsy Shots</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/Reservation.css" />
+    <link rel="stylesheet" href="../css/Header.css">
+    <link rel="stylesheet" href="../css/Footer.css">
+    <script defer src="../js/Reservation.js"></script>
+  </head>
+  <body>
+
+  <header>
+      <div class="nav-bar">
+          <div class="logo"><img src="../images/logo.png" alt=""></div>
+          <div class="navigation">
+              <div class="nav-items">
+                <a href="../html/Home.html">Home</a>
+                <a href="../html/Services.html">Services</a>
+                <a href="../html/Reviews.html">Reviews</a>
+                <a href="../html/Contact Us.html">Contact Us</a>
+                <a href="../html/Gallery.html">Gallery</a>
+                <a href="../html/Reservation.html">Book Now</a>
+              </div>
+          </div>
+      </div>
+  </header>
+  <script src="../js/Header.js"></script>
+
+    <div class="wrapper">
+      <div class="title">Make Your Reservation</div>
+      <form id="form" action="reservation.php" method="post">
+        <div class="form">
+          <div>
+            <div class="inputfield">
+              <label for="firstname">First Name</label>
+              <input
+                id="firstname"
+				name="first_name"
+                type="text"
+                placeholder="First Name"
+                class="input"
+              />
+            </div>
+            <div id="firstname-error" class="errorField"></div>
+          </div>
+
+          <div>
+            <div class="inputfield">
+              <label for="lastname">Last Name</label>
+              <input
+                id="lastname"
+                type="text"
+				name="last_name"
+                placeholder="Last Name"
+                class="input"
+                maxlength="15"
+                min="3"
+              />
+            </div>
+            <div id="lastname-error" class="errorField"></div>
+          </div>
+
+          <div>
+            <div class="inputfield">
+              <label for="email_address ">Email Address</label>
+              <input
+                id="email_address"
+				name="email_address"
+                type="email"
+                placeholder="abc@gmail.com"
+                class="input"
+              />
+            </div>
+            <div id="email_address-error" class="errorField"></div>
+          </div>
+
+          <div>
+            <div class="inputfield">
+              <label for=" phone_number">Phone Number</label>
+              <input
+                id="phone_number"
+				name="phone_number"
+                type="text"
+                placeholder="0777777777"
+                class="input"
+              />
+            </div>
+            <div id="phone_number-error" class="errorField"></div>
+          </div>
+
+          <div>
+            <div class="inputfield">
+              <label for="date ">Date</label>
+              <input id="date" name="date1" type="date" class="input" />
+            </div>
+            <div id="date-error" class="errorField"></div>
+          </div>
+
+          <div>
+            <div class="inputfield">
+              <label for="address">Address</label>
+              <textarea
+                id="address"
+                placeholder="49,Wijeyaba Mw,Kalubowila"
+                class="textarea"
+				name="address"
+              ></textarea>
+            </div>
+            <div id="address-error" class="errorField"></div>
+          </div>
+
+          <div>
+            <div class="inputfield">
+              <label for=" package">Package Type</label>
+			  
+              <div class="custom_select">
+                <select>
+                  <option value="">Select</option>
+                  <option value="wedding">Wedding</option>
+                  <option value="birthday">Birthday</option>
+                  <option value="concert">Concert</option>
+                  <option value="PreShoots">Pre Shoot</option>
+                  <option value="parties">Parties</option>
+                  <option value="spacialEvents">Spacial Events</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="inputfield">
+            <label class="check">
+              <input type="checkbox" required />
+              <span class="checkmark"></span>
+            </label>
+            <p>Agreed to terms and conditions</p>
+          </div>
+
+          <div class="inputfield">
+            <input type="submit" value="Submit" class="btn" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+  <section class="footer">
+      <div class="f-logo">
+          <img src="../images/flogo.png" alt="">
+      </div>
+      <ul class="list">
+          <li>
+              <a href="../html/Home.html">Home</a>
+          </li>
+          <li>
+              <a href="../html/Services.html">Services</a>
+          </li>
+          <li>
+              <a href="../html/Contact Us.html">Contact Us</a>
+          </li>
+          <li>
+              <a href="../html/Gallery.html">Gallery</a>
+          </li>
+          <li>
+              <a href="../html/About Us.html">About</a>
+          </li>
+      </ul>
+      <p class="copyright">Copyright © 2022 Artsy Shots | All Rights Reserved.</p>
+  </section>
+
+  </body>
+</html>

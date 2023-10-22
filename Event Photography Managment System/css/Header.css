@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+/*=======Scrollbar=======*/
+::-webkit-scrollbar{
+	width: 10px;
+	background: #979797;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #575757;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background: #1b1b1b;
+}
+
+body{
+	font-family: "Raleway", sans-serif;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+header{
+    z-index: 99999;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(20px);
+    transition: .6s ease;
+}
+
+header.sticky{
+    background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 5px 25px rgb(1 1 1 / 10%);
+}
+
+.nav-bar{
+    position: relative;
+    height: calc(4rem + 1rem);
+    max-width: 1250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    transition: .6s ease;
+}
+
+header.sticky .nav-bar{
+    height: calc(2.5rem + 1rem);
+}
+
+.nav-items a{
+    color: rgb(59, 59, 59);
+    font-size: medium;
+    font-weight: 500;
+
+}
+
+.nav-items a:not(:last-child){
+    margin-right: 50px;
+}
+
+.nav-items a:hover{
+    color: #1b1b1b;
+}
+
+.nav-bar .logo{
+    width: 150px;
+}
+
+.nav-bar .logo img{
+    width: 100%;
+}

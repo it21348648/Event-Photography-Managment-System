@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit Profile | Artsy Shots</title>
+        <link rel="stylesheet" type="text/css" href="../css/Contact Us.css">
+        <script src="../js/Header.js"></script>
+        <link rel="stylesheet" href="../css/Header.css">
+        <link rel="stylesheet" href="../css/Footer.css">
+
+
+    </head>
+
+    <body>
+
+        <header>
+            <div class="nav-bar">
+                <div class="logo"><img src="../images/logo.png" alt=""></div>
+                <div class="navigation">
+                    <div class="nav-items">
+                        <a href="../html/Home.html">Home</a>
+                        <a href="../html/Services.html">Services</a>
+                        <a href="../html/Reviews.html">Reviews</a>
+                        <a href="../html/Contact Us.html">Contact Us</a>
+                        <a href="../html/Gallery.html">Gallery</a>
+                        <a href="../html/Reservation.html">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <link rel="stylesheet" href="../css/User.css">
+        <script defer src="../js/User.js"></script>
+        <div class="container">
+            <h1>Edit Profile</h1>
+            <form name="registration"  action="edit_profile.php" method="post" class="registartion-form" onsubmit="return formValidation()">
+                <table>
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" name="name" id="name" placeholder="your name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="text" name="email" id="email" placeholder="your email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td><input type="password" name="password" id="password"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phoneNumber">Phone Number:</label></td>
+                        <td><input type="number" name="phoneNumber" id="phoneNumber"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender:</label></td>
+                        <td>
+                            Male: <input type="radio" name="gender" value="male">
+                            Female: <input type="radio" name="gender" value="female">
+                            Other: <input type="radio" name="gender" value="other">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="language">language</label></td>
+                        <td>
+                            <select name="language" id="language">
+                                <option value="">Select language</option>
+                                <option value="English">English</option>
+                                <option value="Spanish">Spanish</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="Arabic">Arabic</option>
+                                <option value="Russian">Russian</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="zipcode">Zip Code:</label></td>
+                        <td><input type="number" name="zipcode" id="zipcode"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="about">About:</label></td>
+                        <td><textarea name="about" id="about" placeholder="Write about yourself..."></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" name="save" class="submit" value="Confirm Submission" /></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <section class="footer">
+            <div class="f-logo">
+                <img src="../images/flogo.png" alt="">
+            </div>
+            <ul class="list">
+                <li>
+                    <a href="../html/Home.html">Home</a>
+                </li>
+                <li>
+                    <a href="../html/Services.html">Services</a>
+                </li>
+                <li>
+                    <a href="../html/Contact Us.html">Contact Us</a>
+                </li>
+                <li>
+                    <a href="../html/Gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="../html/About Us.html">About</a>
+                </li>
+            </ul>
+            <p class="copyright">Copyright © 2022 Artsy Shots | All Rights Reserved.</p>
+        </section>
+    </body>
+</html>

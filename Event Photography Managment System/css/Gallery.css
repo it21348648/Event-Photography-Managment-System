@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+
+body{
+	background-color: #ffffff;
+	height: 100vh;
+	font-family: "Raleway", sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+
+.container .heading{
+    margin-top: 40px;
+    width: 50%;
+    padding-bottom: 50px;
+    color: #4A707A;
+
+}
+
+.container .heading h3{
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;
+
+}
+
+.container .heading h3 span{
+  font-weight: 100;
+
+}
+
+.container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+}
+
+.container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+
+}
+
+.container .box .dream img{
+   
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    /*new add*/
+    /*display: block;
+    transition: transform 1s;*/
+
+
+}
+/*new line
+.container:hover img{
+    transform: scale(1.3);
+}
+/*new line*/
+/*.container .box{
+    width: 100%;
+    display: block;
+    transition: transform 1s;
+}*/
+
+.container .button{
+    margin: 40px 0 70px 0;
+    background: rgb(255, 255, 255);
+    padding: 15px 40px;
+    border-radius: 5px;
+
+}
+
+/*.container .button a{
+   color: aliceblue;
+   font-size: 1.2em;
+   text-decoration: none;
+   font-weight: bolder;
+   font-family: 'Times New Roman';
+   letter-spacing: 3px;
+}*/
+
+
+.container .button a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid rgb(0, 0, 0);
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.container .button a::before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 12px);
+    background: rgb(255, 255, 255);
+    transition: 0.5s ease-in-out;
+    transform: scaleY(1);
+    transition-delay: 0.5s;
+
+}
+.container .button a:hover::before{
+    transform: scaleY(0);
+
+}
+.container .button a::after{
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% - 12px);
+    background: rgb(255, 255, 255);
+    transition: 0.5s ease-in-out;
+    transform: scaleX(1);
+
+}
+.container .button a:hover::after{
+    transform: scaleX(0);
+
+}
+.container .button a span {
+    position: relative;
+    z-index: 3;
+}
+
+.container h5{
+    padding: 20px;
+    font-size: 20px;
+    color: #264D59;
+    margin-top: 40px;
+   
+}
+
+.dream h5{
+    font-size: 28px;
+}
+

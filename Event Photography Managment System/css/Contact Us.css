@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Aquire';
+}
+ /*new modification*/
+.content h2{
+    margin-top: 50px;
+    letter-spacing: 25px;
+}
+
+.contact
+{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../images/teahub.io-wedding-wallpaper-download-1454456.jpg);
+    background-size: cover;
+}
+
+.contact .content
+{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2
+{
+    font-size: 40px;
+    font-weight: 500;
+    color: #4A707A;
+    font-size: 60px;
+   
+}
+
+.contact .content p{
+    font-weight: 300;
+    color: #4A707A;
+    font-family: 'Times New Roman';
+    padding-top: 20px;
+    font-size: 18px;
+    
+}
+
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    
+}
+
+.container .contactInfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    
+}
+
+/*.container .contactInfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 22px;
+}*/
+
+.container .contactInfo .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+    
+}
+
+.container .contactInfo .box .text h3
+{
+    font-weight: 700;
+    color:#205072;
+    padding-top: 20px;
+    font-size: 20px;
+    
+
+
+}
+
+/*new2*/ /*set icons*/
+.icon img{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+/*new class logos*/
+.logo
+{
+    margin-top: 20px;
+    letter-spacing: 70px;
+}
+/*new class p*/
+.p p{
+    margin-top: 35px;
+    font-size: 40px;
+    
+    
+}
+.contactform
+{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+
+.contactform h2
+{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+
+}
+
+.contactform .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactform .inputBox input,
+.contactform .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize:none ;
+
+}
+
+.contactform .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactform .inputBox input:focus ~ span,
+.contactform .inputBox input:valid ~ span,
+.contactform .inputBox textarea:focus ~ span,
+.contactform .inputBox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactform .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/*nav style sheet*/
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+nav{
+    background: #2C6975;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-left: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+/*a .active,a:hover{
+    background: #1b9bff;
+    transition: .5s;*/
+}
+button{
+    border: none;
+    background: #1b9bff;
+    padding: 12px 30px;
+    border-radius: 30px
+}
